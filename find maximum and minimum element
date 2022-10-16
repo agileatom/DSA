@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner (System.in);
+	    int max=0,min =0;
+	    int n = sc.nextInt();
+	    LinkedList <Integer> lst = new LinkedList <Integer> ();
+	    for (int i = 0;i<n;i++)
+	    {
+	        lst.add(sc.nextInt());
+	    }
+	    Collections.sort(lst);
+	    System.out.println("MAXIMUM:"+lst.get(n-1));
+	    System.out.println("MINIMUM:"+lst.get(0));
+	}
+}
